@@ -1,0 +1,91 @@
+.layout {
+  width: 100%;
+  min-height: 100dvh;
+
+  margin-top: 50px;
+  background: radial-gradient(rgba(255, 255, 255, 0.5), black),
+    url("https://cdn.dribbble.com/userupload/4050235/file/original-0668d6c24e51a50f7e0d0699137ff1a1.jpg?resize=1024x768");
+  background-size: cover;
+  filter: grayscale(0.5);
+}
+.layoutTitle {
+  color: rgb(73, 221, 221);
+}
+.porfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.porfolioWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.catTitle {
+  font-size: 60px;
+  margin-top: 20px;
+  color: #f5cba7;
+  /* -webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+  font-weight: bold;
+}
+.link {
+  width: 300px;
+  height: 400px;
+  border: 5px solid var(--color3);
+  border-radius: 5px;
+  position: relative;
+  transition: 1s all ease;
+}
+.link:nth-child(1) {
+  background: url("https://cdn.dribbble.com/userupload/12422878/file/original-c1b05c54e154123b099d6f9cff48f908.jpg?resize=1024x809");
+  background-size: cover;
+
+  cursor: pointer;
+}
+.link:nth-child(2) {
+  background: url("https://cdn.dribbble.com/userupload/12402196/file/original-8dfeb8890897e39dd0f625307ad96d4f.jpg?resize=1024x768");
+  background-size: cover;
+
+  cursor: pointer;
+}
+.link:nth-child(3) {
+  background: url("https://cdn.dribbble.com/userupload/11211609/file/original-4a5824eff0507ee72716236aa81d4fae.jpg?resize=1024x768");
+  background-size: cover;
+
+  cursor: pointer;
+}
+.linkItem {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 20px;
+  color: var(--bg2);
+  font-weight: bolder;
+  transition: 1s all ease;
+}
+.link:nth-child(1):hover {
+  -webkit-box-shadow: -1px -2px 13px 5px rgba(66, 214, 160, 0.7);
+  -moz-box-shadow: -1px -2px 13px 5px rgba(66, 214, 160, 0.7);
+  box-shadow: -1px -2px 13px 5px rgba(66, 214, 160, 0.7);
+}
+.link:nth-child(2):hover {
+  -webkit-box-shadow: -1px -2px 13px 5px rgba(212, 112, 66, 1);
+  -moz-box-shadow: -1px -2px 13px 5px rgba(212, 112, 66, 1);
+  box-shadow: -1px -2px 13px 5px rgba(212, 112, 66, 1);
+}
+.link:nth-child(3):hover {
+  -webkit-box-shadow: -1px -2px 13px 5px rgba(176, 68, 212, 1);
+  -moz-box-shadow: -1px -2px 13px 5px rgba(176, 68, 212, 1);
+  box-shadow: -1px -2px 13px 5px rgba(176, 68, 212, 1);
+}
+.link:hover .linkItem {
+  color: #f5cba7;
+  background-color: black;
+}

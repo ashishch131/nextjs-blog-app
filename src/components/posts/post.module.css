@@ -1,0 +1,10 @@
+.posts {
+  flex: 4;
+  width: 100%;
+  background-color: var(--bg2soft);
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
